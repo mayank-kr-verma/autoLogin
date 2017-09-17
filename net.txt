@@ -7,6 +7,9 @@ launchctl start net.job
 launchctl unload -w ~/Library/LaunchAgents/net.plist
 -- command to stop/disable
 
+osascript /Users/makx/Documents/net.scpt
+-- command to run the script directly through terminal
+
 scpt file is the original script file that is being run
 above plist file is just the sample copy
 original plist file is present under "~/Library/LaunchAgents" and handles running the scpt script
