@@ -1,0 +1,12 @@
+launchctl load -w ~/Library/LaunchAgents/net.plist
+-- command to run
+
+launchctl start net.job
+-- command to start job(in case script not working)
+
+launchctl unload -w ~/Library/LaunchAgents/net.plist
+-- command to stop/disable
+
+scpt file is the original script file that is being run
+above plist file is just the sample copy
+original plist file is present under "~/Library/LaunchAgents" and handles running the scpt script
