@@ -1,23 +1,13 @@
 to inputByName(theName, num, theValue)
-
 tell application "Safari"
-
-do JavaScript " 
-
-  document.getElementsByName('" & theName & "')[" & num & "].value ='" & theValue & "';" in document 1
-
+do JavaScript "document.getElementsByName('" & theName & "')[" & num & "].value ='" & theValue & "';" in document 1
 end tell
-
 end inputByName
 
 to clickID(theId) 
-
 tell application "Safari" 
-
 do JavaScript "document.getElementById('" & theId & "').click();" in document 1
-
 end tell 
-
 end clickID
 
 set networkUp to true
@@ -40,8 +30,8 @@ repeat
 					activate
 					set URL of document 1 to "http://172.172.172.100:8090"
 				end tell
-				inputByName("textbox", 0, "160717")
-				inputByName("textbox", 1, "Rio@1234")
+				inputByName("textbox", 0, "id")
+				inputByName("textbox", 1, "password")
 				clickID("logincaption")
 				tell application "Safari"
 					quit
