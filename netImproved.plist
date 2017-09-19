@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>net.job</string>
+    <string>netImproved.job</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/osascript</string>
-        <string>/Users/makx/Documents/net/net.scpt</string>
+        <string>/Users/makx/Documents/netImproved/netImproved.scpt</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
